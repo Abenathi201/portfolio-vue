@@ -1,10 +1,10 @@
 <template>
     <header>
         <div class="nav-bar">
-            <a href="#" class="logo">Abenathi</a>
+            <a href="/" class="logo">Abenathi</a>
             <div class="navigation">
                 <router-link class="links" to="/">Home</router-link>
-                <router-link class="links" to='about'>About</router-link>
+                <router-link class="links" to="about">About</router-link>
                 <router-link class="links" to="skills">Skills</router-link>
                 <router-link class="links" to="projects">Projects</router-link>
                 <router-link class="links" to="contact">Contact</router-link>
