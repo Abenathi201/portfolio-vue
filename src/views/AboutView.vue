@@ -4,12 +4,12 @@
     <h1>About Me</h1>
     <div class="line"></div>
 
-    <div class="container">
-      <!-- <div class="img">
+    <!-- <div class="container">
+      <div class="img">
         <img src="https://i.postimg.cc/hjYzpV22/C12-C2-Abenathi-Sindapi-2.jpg" alt="Abenathi Sindapi">
-      </div> -->
+      </div>
   
-      <!-- <div class="bio">
+      <div class="bio">
         <p>
           Hello, I'm Abenathi Sindapi, hailing from Khayelitsha. With a background in coding and a fervent drive to break barriers, I'm on a mission to transform lives through technology. Proficient in HTML, CSS, Bootstrap, JavaScript, Vue.js, MySQL, and Node.js, I'm constantly honing my skills to build innovative solutions.
 
@@ -17,8 +17,8 @@
 
           Let's connect and collaborate on projects that make a positive impact. Together, we can shape a brighter future through code!
         </p>
-      </div> -->
-    </div>
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -43,13 +43,13 @@
   margin-bottom: 10px;
 }
 
-/* .container{
+.container{
   width: 1257px;
   height: 556px;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .img{
   width: 436px;
