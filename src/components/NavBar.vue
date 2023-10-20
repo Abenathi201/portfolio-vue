@@ -1,13 +1,13 @@
 <template>
-    <header>
+    <header :class="{ sticky: isSticky }">
         <div class="nav-bar">
             <a href="/" class="logo">Abenathi</a>
             <div class="navigation">
-                <router-link class="links" to="/">Home</router-link>
-                <router-link class="links" to="about">About</router-link>
-                <router-link class="links" to="skills">Skills</router-link>
-                <router-link class="links" to="projects">Projects</router-link>
-                <router-link class="links" to="contact">Contact</router-link>
+                <router-link class="links" to="#home">Home</router-link>
+                <router-link class="links" to="#about">About</router-link>
+                <routerlink class="links" to="skills">Skills</routerlink>
+                <routerlink class="links" to="projects">Projects</routerlink>
+                <routerlink class="links" to="contact">Contact</routerlink>
             </div>
         </div>
     </header>
@@ -15,7 +15,26 @@
 
 <script>
 export default {
-    
+    data() {
+      return {
+        isSticky: false,
+        isNavigationActive: false,
+      };
+    },
+
+    methods: {
+      handleScroll() {
+          this.isSticky = window.scrollY > 0;
+      },
+    },
+
+    mounted() {
+      window.addEventListener("scroll", this.handleScroll);
+    },
+
+    beforeDestroy() {
+      window.removeEventListener("scroll", this.handleScroll);
+    }
 }
 </script>
 
@@ -25,11 +44,17 @@ export default {
 header{
     z-index: 99999;
     width: 100%;
+    height: 95px;
     position: fixed;
     top: 0;
     left: 0;
     backdrop-filter: blur(20px);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
+}
+
+header.sticky {
+    height: 70px;
+    box-shadow: 0px 8px 24px  rgba(149, 157, 165, 0.2);
 }
 
 .nav-bar{

@@ -14,14 +14,10 @@
       </p>
     </div>
 
-    <div class="btn">
-      <button>Hire Me</button>
-    </div>
-
     <div class="socials">
-      <a href="https://www.facebook.com" target="_blank">
+      <!-- <a href="https://www.facebook.com" target="_blank">
         <i class="fa-brands fa-facebook"></i>
-      </a>
+      </a> -->
 
       <a href="https://www.linkedin.com/in/abenathi-sindapi-420969270/" target="_blank">
         <i class="fa-brands fa-linkedin"></i>
@@ -31,7 +27,10 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
+    <div class="scroll">
+      <h4>Scroll to view <i class="fa-sharp fa-solid fa-arrow-down"></i></h4>
     </div>
+  </div>
 </template>
 
 <script>
@@ -42,23 +41,21 @@ export default {
 
 <style scoped>
 .container{
-  width: 810px;
-  height: 449px;
-  left: 50%;
-  position: absolute;
-  top: 45%;
-  transform: translate(-50%, -50%);
-  /* text-align: center; */
+  width: 850px;
+  min-height: 400px;
+  margin: auto;
+  /* background-color: #808080; */
+  margin-top: 30px;
 }
 
 .title h1{
-  font-size: 75px;
+  font-size: 65px;
   font-weight: normal;
   color: #000000;
 }
 
 .title span{
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 600;
   color: #808080;
 }
@@ -67,28 +64,13 @@ export default {
   font-size: 28px;
   color: #000000;
   font-weight: 500;
-  margin-block: 30px;
+  margin-block: 0px;
 }
 
 .summary p{
   font-size: 28px;
   color: #000000;
   font-weight: 300;
-}
-
-.btn{
-  margin-block: 20px;
-}
-
-.btn button{
-  width: 223px;
-  height: 80px;
-  background-color: #000000;
-  color: #FFFFFF;
-  border: none;
-  cursor: pointer;
-  font-size: 40px;
-  font-weight: normal;
 }
 
 .socials{
@@ -106,4 +88,24 @@ export default {
 .socials a:hover{
   transform: scale(1.1);
 }
+
+.scroll{
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.scroll i{
+  font-size: 20px;
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 </style>
