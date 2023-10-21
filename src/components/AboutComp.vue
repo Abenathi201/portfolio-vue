@@ -73,7 +73,7 @@
 .bio{
   width: 629px;
   height: 550px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 5px;
 }
 
