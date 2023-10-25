@@ -42,10 +42,8 @@ export default {
 <style scoped>
 .container{
   width: 850px;
-  /* width: 1120px */
   min-height: 400px;
   margin: auto;
-  /* background-color: #808080; */
   margin-top: 30px;
 }
 
