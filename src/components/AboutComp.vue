@@ -1,35 +1,4 @@
 <template>
-  <!-- <div class="about">
-    <div class="title">
-      <div class="line"></div>
-      <h1>About Me</h1>
-      <div class="line"></div>
-    </div>
-
-    <div class="container">
-      <div class="img">
-        <img src="https://i.postimg.cc/hjYzpV22/C12-C2-Abenathi-Sindapi-2.jpg" alt="Abenathi Sindapi">
-      </div>
-  
-      <div class="bio">
-        <p>
-          Hello, I'm Abenathi Sindapi, hailing from Khayelitsha. With a background in coding and a fervent drive to break barriers, I'm on a mission to transform lives through technology. Proficient in HTML, CSS, Bootstrap, JavaScript, Vue.js, MySQL, and Node.js, I'm constantly honing my skills to build innovative solutions.
-          <br>
-          <br>
-          Currently, I'm gearing up for the AWS exam, aiming to elevate my proficiency in cloud computing. My journey is a testament to the power of determination and learning. I believe that technology is a tool for empowerment, and I'm committed to bridging gaps and creating opportunities.
-          <br>
-          <br>
-          Let's connect and collaborate on projects that make a positive impact. Together, we can shape a brighter future through code!
-        </p>
-
-        <div class="btn">
-          <button>Resume</button>
-          <button>Contact</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="about">
 
     <div class="title">
@@ -60,6 +29,13 @@
 
     <div class="skills">
       <h3>Skills</h3>
+
+      <!-- <div class="nav">
+        <button>All</button>
+        <button>Technical</button>
+        <button>Soft</button>
+      </div> -->
+
       <ul>
         <li>
           <img src="https://i.postimg.cc/0QWr458Z/file-type-html-226x256.png" alt="HTML5">
@@ -110,7 +86,6 @@
           <img src="https://i.postimg.cc/cLwgJNm4/file-type-firebase-187x256.png" alt="firebase">
           <h6>Firebase</h6>
         </li>
-
       </ul>
     </div>
 
@@ -119,12 +94,12 @@
     <div class="contact">
       <div class="left">
         <h6>I am looking forward to collaborate on projects</h6>
-        <button>Contact <i class="fa-sharp fa-solid fa-arrow-down"></i></button>
+        <button class="btn">Contact <i class="fa-sharp fa-solid fa-arrow-down"></i></button>
       </div>
 
       <div class="right">
         <h6>abenathi.sindaphi201@gmail.com</h6>
-        <button class="resume">Resume</button>
+        <button class="resume btn">Resume</button>
       </div>
     </div>
 
@@ -210,6 +185,25 @@
   text-align: center;
 }
 
+.nav{
+  width: 450px;
+  height: 100px;
+  background-color: #808080;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.nav button{
+  min-width: 74px;
+  height: 50px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+
 ul{
   display: flex;
   flex-wrap: nowrap;
@@ -253,6 +247,38 @@ ul li h6{
   color: #000000;
   font-size: 16px;
   font-weight: 500;
+}
+
+button {
+  background: white;
+  border: solid 2px black;
+  padding: 5px 10px;
+}
+
+.btn {
+  font-size: 25px;
+  font-weight: 300;
+  background: #000000;
+  color: #FFFFFF;
+  box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+  transform: translateY(0);
+  cursor: pointer;
+  
+  --dur: .10s;
+  --delay: .10s;
+  
+  transition:
+    box-shadow calc(var(--dur) * 4) ease-out,
+    transform calc(var(--dur) * 4) ease-out,
+    background calc(var(--dur) * 4) steps(4, jump-end);
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+  transform: translateY(-4px);
+  background: #FFFFFF;
+  color: #000000;
 }
 
 .contact .resume{

@@ -3,6 +3,7 @@
         <div class="nav-bar">
             <a href="/" class="logo">Abenathi</a>
             <div class="navigation">
+                <!-- Use a tag -->
                 <router-link class="links" to="#home">Home</router-link>
                 <router-link class="links" to="#about">About</router-link>
                 <routerlink class="links" to="skills">Skills</routerlink>

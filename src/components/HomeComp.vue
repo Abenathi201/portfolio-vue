@@ -10,7 +10,7 @@
 
     <div class="summary">
       <p>
-        Passionate Web Developer from Khayelitsha Breaking Barriers with Technology 🚀 | Moderately Proficient in HTML, CSS, Bootstrap, JavaScript, Vue.js, MySQL, and Node.js | AWS Enthusiast 🌐 | Empowered Through Code 💡
+        Web Developer from Khayelitsha Breaking Barriers with Technology 🚀  | AWS Enthusiast 🌐 | Empowered Through Code 💡
       </p>
     </div>
 
@@ -42,9 +42,9 @@ export default {
 <style scoped>
 .container{
   width: 850px;
-  min-height: 400px;
+  min-height: 956px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .title h1{
@@ -89,8 +89,11 @@ export default {
 }
 
 .scroll{
-  margin: auto;
-  margin-bottom: 10px;
+  /* margin: auto; */
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll i{
