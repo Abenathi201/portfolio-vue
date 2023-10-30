@@ -109,7 +109,7 @@
 <style scoped>
 .about{
   width: 1120px;
-  min-height: 1242; 
+  min-height: 1242px; 
   margin: auto;
 }
 
@@ -256,8 +256,8 @@ button {
 }
 
 .btn {
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 100;
   background: #000000;
   color: #FFFFFF;
   box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
