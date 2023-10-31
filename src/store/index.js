@@ -59,6 +59,22 @@ export default createStore({
       } catch (err) {
         context.commit("setProjectsError", err.message);
       }
-    }    
+    },
+    
+    async getTestimonials(context) {
+      try {
+        const response = await fetch(database);
+    
+        if (!response.ok) {
+          throw Error("Failed to fetch projects");
+        } else {
+          const { testimonials } = await response.json();
+          context.commit("setTestimonials", testimonials);
+          console.log('Testimonials fetched', testimonials);
+        }
+      } catch (err) {
+        context.commit("setProjectsError", err.message);
+      }
+    }
   }
 });
