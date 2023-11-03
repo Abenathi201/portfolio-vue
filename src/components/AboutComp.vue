@@ -112,7 +112,7 @@
   min-height: 1200px;
   /* border: 2px solid black; */
   margin: auto;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .title{

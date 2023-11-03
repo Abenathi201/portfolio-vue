@@ -1,7 +1,7 @@
 <template>
     <footer>
       <h1>©️Copyright2023</h1>
-      <a href="#">Abenathi</a>
+      <router-link to="/">Abenathi</router-link>
       <h1>Made by Abenathi Sindapi</h1>
     </footer>
   </template>

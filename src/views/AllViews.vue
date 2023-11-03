@@ -4,7 +4,6 @@
     <section id="home">
       <HomeComp/>
     </section>
-    <hr>
     <!-- Landing Section -->
   
     <!-- About Section -->

@@ -89,6 +89,7 @@ export default {
 .contact{
     width: 1120px;
     margin: auto;
+    margin-top: 100px;
 }
 
 .title{

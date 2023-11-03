@@ -35,7 +35,7 @@ export default {
     min-height: 1200px;
     /* border: 2px solid black; */
     margin: auto;
-    /* margin-top: 80px; */
+    margin-top: 100px;
 }
 
 .container h1{

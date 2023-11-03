@@ -84,28 +84,29 @@ export default {
 
 
 .container{
-  width: 1120px;
-  min-height: 850px;
-  margin: auto;
+    width: 1120px;
+    min-height: 850px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .title{
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .title h1{
-  font-size: 40px;
-  font-weight: 500;
-  text-align: center;
-  margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
 }
 
 .line {
-  border-top: 2px solid #000000;
-  width: 23%;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    border-top: 2px solid #000000;
+    width: 23%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .frame{

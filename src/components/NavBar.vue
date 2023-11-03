@@ -1,14 +1,13 @@
 <template>
     <header :class="{ sticky: isSticky }">
         <div class="nav-bar">
-            <a href="/" class="logo">Abenathi</a>
+            <router-link to="/" class="logo">Abenathi</router-link>
             <div class="navigation">
-                <!-- Use a tag -->
-                <router-link class="links" to="#home">Home</router-link>
-                <router-link class="links" to="#about">About</router-link>
-                <routerlink class="links" to="skills">Skills</routerlink>
-                <routerlink class="links" to="projects">Projects</routerlink>
-                <routerlink class="links" to="contact">Contact</routerlink>
+                <router-link to="/" class="links" :class="{ active: activeLink === 'home' }" @click="setActiveLink('home')">Home</router-link>
+                <router-link to="/#about" class="links" :class="{ active: activeLink === 'about' }" @click="setActiveLink('about')">About</router-link>
+                <router-link to="/#projects" class="links" :class="{ active: activeLink === 'projects' }" @click="setActiveLink('projects')">Projects</router-link>
+                <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials')">Testimonials</router-link>
+                <router-link to="/#contact" class="links" :class="{ active: activeLink === 'contact' }" @click="setActiveLink('contact')">Contact</router-link>
             </div>
         </div>
     </header>
@@ -20,13 +19,19 @@ export default {
       return {
         isSticky: false,
         isNavigationActive: false,
+        activeLink: "home",
       };
     },
 
     methods: {
-      handleScroll() {
-          this.isSticky = window.scrollY > 0;
-      },
+        handleScroll() {
+            this.isSticky = window.scrollY > 0;
+        },
+
+        setActiveLink(link) {
+            this.activeLink = link;
+            console.log(this.activeLink);
+        }
     },
 
     mounted() {
@@ -69,12 +74,12 @@ header.sticky {
     margin-right: auto;
     padding: 0 20px;
     transition: 05s ease;
-    /* background: #0e2431; */
 }
 
 .links{
     font-size: 24px;
     font-weight: normal;
+    text-decoration: none;
 }
 
 .nav-bar .logo{
@@ -82,11 +87,12 @@ header.sticky {
     color: #000000;
     font-size: 36px;
     font-weight: normal;
+    text-decoration: none;
 }
 
 .nav-bar .links{
-    color: #0e2431  ;
-    font-size: var(--normal-font-size);
+    color: #000000;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -95,6 +101,10 @@ header.sticky {
 }
 
 .nav-bar .links:hover{
-    color: #777;
+    color: #808080;
+}
+
+.active {
+    color: #777 !important;
 }
 </style>
