@@ -32,9 +32,10 @@ export default {
 <style scoped>
 .container{
     min-width: 850px;
-    min-height: 956px;
+    min-height: 1200px;
+    /* border: 2px solid black; */
     margin: auto;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .container h1{

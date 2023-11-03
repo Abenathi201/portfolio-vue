@@ -109,8 +109,10 @@
 <style scoped>
 .about{
   width: 1120px;
-  min-height: 1242px; 
+  min-height: 1200px;
+  /* border: 2px solid black; */
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .title{

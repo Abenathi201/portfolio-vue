@@ -10,29 +10,28 @@
 
             <div class="inner" v-if="currentTestimonial !== null">
 
+                <transition name="fade" mode="out-in">
                 <div class="left">
                     <div class="text">
-                        <!-- <p>
-                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                        </p> -->
                         <p>{{ testimonials[currentTestimonial].testimony }}</p>
                     </div>
 
                     <img src="https://i.postimg.cc/rs7DnrHC/ci-double-quotes-l.jpg" alt="" class="quotes">
 
                     <div class="header">
-                        <!-- <h1>Cheslyn Herman</h1> -->
                         <h1>{{ testimonials[currentTestimonial].name }}</h1>
                         <p>Life Choices Academy Cohort</p>
                     </div>
                 </div>
+                </transition>
 
                 <div class="right">
-                    <!-- <img src="https://i.postimg.cc/g0R9JZPB/C12_Cheslyn_Herman_(1).jpg" alt=""> -->
+                    <transition name="fade" mode="out-in">
                     <img :src="testimonials[currentTestimonial].image" :alt="testimonials[currentTestimonial].name">
+                    </transition>
                     <div class="btns">
-                        <button class="prev" @click="prevTestimonial"><i class="fa-solid fa-chevron-left  2"></i> Previous</button>
-                        <button @click="nextTestimonial">Next <i class="fa-solid fa-chevron-right"></i></button>
+                        <button v-if="currentTestimonial > 0" class="prev" @click="prevTestimonial"><i class="fa-solid fa-chevron-left  2"></i> Previous</button>
+                        <button v-if="currentTestimonial < testimonials.length - 1" class="next" @click="nextTestimonial">Next <i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -74,18 +73,54 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+.container{
+  width: 1120px;
+  min-height: 850px;
+  margin: auto;
+}
+
+.title{
+  margin-bottom: 70px;
+}
+
+.title h1{
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.line {
+  border-top: 2px solid #000000;
+  width: 23%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .frame{
     width: 1080px;
-    height: 1080px;
+    height: 1000px;
 }
 
 .inner{
     width: 957px;
     height: 598px;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    box-shadow: 0px 85.26px 181.4px 0px rgba(21, 21, 21, 0.15);
 }
 
 .left{
@@ -97,7 +132,7 @@ export default {
 .text{
     width: 360px;
     height: 216px;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
 }
 
 .text p{
@@ -172,7 +207,5 @@ export default {
 .right button:focus{
     box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
     transform: translateY(-4px);
-    /* background: #FFFFFF;
-    color: #000000; */
 }
 </style>

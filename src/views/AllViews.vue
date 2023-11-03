@@ -24,6 +24,12 @@
       <TestimonialsComp/>
     </section>
     <!-- Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <ContactComp/>
+    </section>
+    <!-- Contact Section -->
   </div>
 </template>
 
@@ -32,12 +38,14 @@ import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
 import ProjectComp from '@/components/ProjectComp.vue';
 import TestimonialsComp from '@/components/TestimonialsComp.vue';
+import ContactComp from '@/components/ContactComp.vue';
 export default {
     components: {
         HomeComp,
         AboutComp,
         ProjectComp,
-        TestimonialsComp
+        TestimonialsComp,
+        ContactComp
     },
 }
 </script>

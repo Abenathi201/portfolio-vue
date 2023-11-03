@@ -15,10 +15,6 @@
     </div>
 
     <div class="socials">
-      <!-- <a href="https://www.facebook.com" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-      </a> -->
-
       <a href="https://www.linkedin.com/in/abenathi-sindapi-420969270/" target="_blank">
         <i class="fa-brands fa-linkedin"></i>
       </a>
@@ -42,9 +38,15 @@ export default {
 <style scoped>
 .container{
   width: 850px;
-  min-height: 956px;
+  min-height: 750px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 120px;
+}
+
+.title{
+  /* border: 2px solid black; */
+  margin: 0;
+  height: 300px;
 }
 
 .title h1{
@@ -56,18 +58,19 @@ export default {
 .title span{
   font-size: 65px;
   font-weight: 600;
+  margin-block: 20px;
   color: #808080;
 }
 
 .name h4{
-  font-size: 28px;
+  font-size: 50px;
   color: #000000;
-  font-weight: 500;
+  font-weight: normal;
   margin-block: 0px;
 }
 
 .summary p{
-  font-size: 28px;
+  font-size: 25px;
   color: #000000;
   font-weight: 300;
 }
