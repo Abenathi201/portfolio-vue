@@ -329,4 +329,24 @@ form .form-row .textarea{
     box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
     transform: translateY(-4px);
 }
+
+@media screen and (max-width: 1050px) {
+    .contact{
+        width: 100%;
+    }
+
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+}
 </style>

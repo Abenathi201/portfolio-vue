@@ -59,4 +59,28 @@ export default {
 .btns a:focus{
     transform: translateY(-4px) scale(1.1);
 }
+
+@media screen and (max-width: 1050px) {
+    .card{
+        width: 80%;
+        margin-block: 20px;
+    }
+
+    .card img{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 525px) and (max-width: 1160px) {
+    .card{
+        width: 55%;
+        margin-block: 20px;
+    }
+
+    .card img{
+        width: 100%;
+        height: 60%;
+    }
+}
 </style>

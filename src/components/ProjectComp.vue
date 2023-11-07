@@ -33,7 +33,6 @@ export default {
 .container{
     min-width: 850px;
     min-height: 1200px;
-    /* border: 2px solid black; */
     margin: auto;
     margin-top: 100px;
 }
@@ -54,10 +53,25 @@ export default {
 }
 
 .cards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1050px) {
+  .container{
+    min-width: 100%;
+    min-height: 1200px;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .container h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
 }
 </style>

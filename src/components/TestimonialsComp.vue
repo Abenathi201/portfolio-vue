@@ -73,16 +73,6 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-
 .container{
     width: 1120px;
     min-height: 850px;
@@ -117,7 +107,6 @@ export default {
 .inner{
     width: 957px;
     height: 598px;
-    /* border: 2px solid #000000; */
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -208,5 +197,54 @@ export default {
 .right button:focus{
     box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
     transform: translateY(-4px);
+}
+
+@media screen and (max-width: 1050px) {
+    .container{
+        width: 100%;
+        min-height: 850px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .frame{
+        width: 100%;
+    }
+
+    .inner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 0 0;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 90px;
+        margin: auto;
+    }
+
+    .left img{
+        display: none;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .text p{
+        font-size: 20px;
+    }
+
+    .right{
+        margin: auto;
+    }
+
+    .right img{
+        width: 85%;
+        height: 96%;
+    }
 }
 </style>

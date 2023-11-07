@@ -94,7 +94,7 @@
     <div class="contact">
       <div class="left">
         <h6>I am looking forward to collaborate on projects</h6>
-        <button class="btn">Contact <i class="fa-sharp fa-solid fa-arrow-down"></i></button>
+        <button class="btn" @click="scrollToContact">Contact <i class="fa-sharp fa-solid fa-arrow-down"></i></button>
       </div>
 
       <div class="right">
@@ -106,11 +106,26 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    scrollToContact() {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        window.scrollTo({
+          top: contactSection.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
+}
+</script>
+
 <style scoped>
 .about{
   width: 1120px;
   min-height: 1200px;
-  /* border: 2px solid black; */
   margin: auto;
   margin-top: 100px;
 }
@@ -187,28 +202,9 @@
   text-align: center;
 }
 
-.nav{
-  width: 450px;
-  height: 100px;
-  background-color: #808080;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-}
-
-.nav button{
-  min-width: 74px;
-  height: 50px;
-  background-color: #000000;
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 500;
-  border: none;
-}
-
 ul{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 36px;
 }
 
@@ -287,76 +283,88 @@ button {
   float: right;
 }
 
-/*
-.about h1{
-  font-size: 40px;
-  font-weight: 500;
-  text-align: center;
-  margin: 0;
+@media screen and (max-width: 1050px){
+  .about{
+    width: 100%;
+    min-height: 1200px;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .line{
+    width: 65%;
+  }
+
+  .container{
+    width: 100%;
+    min-height: 590px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+
+  .image{
+    width: 90%;
+    height: 95%;
+    margin: auto;
+  }
+
+  .bio{
+    width: 100%;
+  }
+
+  .skills{
+    width: 100%;
+  }
+
+  ul{
+    padding-top: 15px;
+  }
+
+  ul li{
+    margin-inline: 10px;
+  }
+
+  ul li img{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .resume{
+    float: left;
+  }
 }
 
-.line {
-  border-top: 2px solid #000000;
-  width: 22%;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+@media screen and (min-width: 750px) and (max-width: 1070px) {
+  .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact .resume{
+    float: right;
+  }
 }
 
-.container{
-  height: 556px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-}
 
-.img{
-  width: 436px;
-  height: 556px;
-}
+@media screen and (min-width: 450px) and (max-width: 1050px) {
+  .image{
+    width: 60%;
+    height: 75%;
+    margin: auto;
+  }
 
-.img img{
-  width: 276px;
-  height: 404px;
+  .line{
+    width: 20%;
+  }
 }
-
-.bio{
-  width: 629px;
-  height: 550px;
-  border: 2px solid black;
-  padding: 5px;
-}
-
-.bio p{
-  font-size: 20px;
-  font-weight: normal;
-  margin: 0;
-  text-align: left;
-  align-items: top;
-}
-
-.btn{
-  margin-block: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.btn button{
-  width: 150px;
-  height: 60px;
-  background-color: #000000;
-  color: #FFFFFF;
-  border: none;
-  cursor: pointer;
-  font-size: 30px;
-  font-weight: normal;
-  transition: 0.3s linear;
-}
-
-.btn button:hover{
-  background-color: #FFFFFF;
-  color: #000000;
-  border: 2px solid #000000;
-} */
 </style>

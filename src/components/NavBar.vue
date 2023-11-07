@@ -2,13 +2,18 @@
     <header :class="{ sticky: isSticky }">
         <div class="nav-bar">
             <router-link to="/" class="logo">Abenathi</router-link>
-            <div class="navigation">
-                <router-link to="/" class="links" :class="{ active: activeLink === 'home' }" @click="setActiveLink('home')">Home</router-link>
-                <router-link to="/#about" class="links" :class="{ active: activeLink === 'about' }" @click="setActiveLink('about')">About</router-link>
-                <router-link to="/#projects" class="links" :class="{ active: activeLink === 'projects' }" @click="setActiveLink('projects')">Projects</router-link>
-                <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials')">Testimonials</router-link>
-                <router-link to="/#contact" class="links" :class="{ active: activeLink === 'contact' }" @click="setActiveLink('contact')">Contact</router-link>
+            <div class="navigation" :class="{ active: isNavigationActive }">
+
+                <div class="nav-items">
+                    <i class="uil uil-times nav-close-btn" @click="closeNavigation"></i>
+                    <router-link to="/" class="links" :class="{ active: activeLink === 'home' }" @click="setActiveLink('home')">Home</router-link>
+                    <router-link to="/#about" class="links" :class="{ active: activeLink === 'about' }" @click="setActiveLink('about')">About</router-link>
+                    <router-link to="/#projects" class="links" :class="{ active: activeLink === 'projects' }" @click="setActiveLink('projects')">Projects</router-link>
+                    <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials')">Testimonials</router-link>
+                    <router-link to="/#contact" class="links" :class="{ active: activeLink === 'contact' }" @click="setActiveLink('contact')">Contact</router-link>
+                </div>
             </div>
+            <i class="uil uil-apps nav-menu-btn" @click="openNavigation"></i>
         </div>
     </header>
 </template>
@@ -16,30 +21,54 @@
 <script>
 export default {
     data() {
-      return {
-        isSticky: false,
-        isNavigationActive: false,
-        activeLink: "home",
+        return {
+          isSticky: false,
+          isNavigationActive: false,
+          activeLink: "home",
       };
     },
 
     methods: {
-        handleScroll() {
-            this.isSticky = window.scrollY > 0;
-        },
+      handleScroll() {
+          this.isSticky = window.scrollY > 0;
 
-        setActiveLink(link) {
-            this.activeLink = link;
-            console.log(this.activeLink);
-        }
+          let currentSection = null;
+          const sections = ['home', 'about', 'projects', 'testimonials', 'contact'];
+
+          for (const section of sections) {
+            const element = document.getElementById(section);
+            const rect = element.getBoundingClientRect();
+
+            if (rect.top <= 100 && rect.bottom >= 100) {
+              currentSection = section;
+              break;
+            }
+          }
+
+          if (currentSection) {
+            this.activeLink = currentSection;
+          }
+      },
+
+      openNavigation() {
+        this.isNavigationActive = true;
+      },
+
+      closeNavigation() {
+        this.isNavigationActive = false;
+      },
+
+      setActiveLink(link) {
+        this.activeLink = link;
+      }
     },
 
     mounted() {
-      window.addEventListener("scroll", this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll);
     },
 
     beforeDestroy() {
-      window.removeEventListener("scroll", this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
     }
 }
 </script>
@@ -76,6 +105,10 @@ header.sticky {
     transition: 05s ease;
 }
 
+.nav-close-btn, .nav-menu-btn{
+    display: none;
+}
+
 .links{
     font-size: 24px;
     font-weight: normal;
@@ -106,5 +139,89 @@ header.sticky {
 
 .active {
     color: #777 !important;
+}
+
+@media screen and (max-width: 900px){
+    /* .nav-bar{
+        padding: 25px 20px;
+    } */
+
+    .nav-menu-btn{
+        display: block;
+        color: #000000;
+        display: flex;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-close-btn{
+        display: block;
+        color: var(--dark-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5em;
+        margin: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .navigation{
+        z-index: 99999;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    .navigation.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navigation .nav-items{
+        position: relative;
+        background: var(--white-color);
+        width: 400px;
+        height: 500px;
+        max-width: 400px;
+        display: grid;
+        place-content: center;
+        margin: auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: var(--box-shadow);
+        transform: translateY(-80px);
+        transition: 0.3s ease;
+    }
+
+    .navigation.active .nav-items{
+        transform: translateY(0);
+    }
+
+    .navigation .nav-items a{
+        color: var(--dark-color);
+        font-size: 1em;
+        margin: 40px;
+        transition: 0.3s ease;
+    }
+
+    .navigation .nav-items a:hover{
+        color: var(--navigation-item-hover-color);
+    }
+    
+    .navigation .nav-items a i{
+        display: inline-block;
+        font-size: 1.3em;
+        margin-right: 5px;
+    }
 }
 </style>
