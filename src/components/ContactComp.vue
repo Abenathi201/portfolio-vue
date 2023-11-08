@@ -335,6 +335,12 @@ form .form-row .textarea{
         width: 100%;
     }
 
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .contact{
         width: 100%;
         display: flex;
@@ -343,10 +349,90 @@ form .form-row .textarea{
 
     .info{
         width: 100%;
+        margin: auto;
     }
 
     form{
         width: 100%;
+        height: 80%;
+        border: none;
+    }
+
+    .info h1{
+        font-size: 1.53125em;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    .info h6{
+        font-size: 0.8125em;
+        font-weight: normal;
+        text-align: left;
+        color: #C9C9C9;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .details{
+        width: 100%;
+        height: 220px;
+        margin-left: 10px;
+    }
+
+    .details p{
+        font-size: 0.84375em;
+        font-weight: normal;
+        text-align: left;
+        display: flex;
+        gap: 20px;
+    }
+
+    .socials{
+        margin-left: 10px;
+        width: 100%;
+        height: 100px;
+        margin-top: 15px;
+    }
+
+    .socials h6{
+        font-size: 0.9375em;
+        font-weight: normal;
+        text-align: left;
+        color: #C9C9C9;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .socials .icons{
+        display: flex;
+        justify-content: start;
+        margin-left: 80px;
+        gap: 15px;
+    }
+
+    .socials .icons a{
+        font-size: 1.875em;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+        transition: 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .info{
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    form{
+        width: 100%;
+        height: 80%;
+        margin: auto;
+        margin-left: 20px;
+        border: none;
     }
 }
 </style>

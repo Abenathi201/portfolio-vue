@@ -218,6 +218,10 @@ export default {
         box-shadow: 0 0 0 0;
     }
 
+    .inner .header{
+        margin-top: 35px;
+    }
+
     .left{
         display: flex;
         flex-direction: column;
