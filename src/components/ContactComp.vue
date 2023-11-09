@@ -347,6 +347,10 @@ form .form-row .textarea{
         flex-direction: column;
     }
 
+    .line{
+        display: none;
+    }
+
     .info{
         width: 100%;
         margin: auto;

@@ -292,7 +292,7 @@ button {
   }
 
   .line{
-    width: 65%;
+    display: none;
   }
 
   .container{

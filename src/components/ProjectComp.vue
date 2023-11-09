@@ -31,10 +31,10 @@ export default {
 
 <style scoped>
 .container{
-    min-width: 850px;
-    min-height: 1200px;
-    margin: auto;
-    margin-top: 100px;
+  min-width: 850px;
+  min-height: 1200px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 .container h1{
@@ -66,6 +66,10 @@ export default {
     min-height: 1200px;
     margin: auto;
     margin-top: 100px;
+  }
+
+  .line{
+    display: none;
   }
 
   .container h1{

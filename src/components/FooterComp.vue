@@ -21,7 +21,7 @@ footer{
     height: 108px;
     padding: 10px;
     align-items: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     box-shadow: 0px -8px 24px rgba(149, 157, 165, 0.2);
 }
 
@@ -38,5 +38,21 @@ a{
     color: #000000;
 }
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    footer h1{
+        font-size: 14px;
+        font-size: 500;
+        text-align: center;
+    }
+
+    a{
+        font-size: 26px;
+    }
+}
 </style>

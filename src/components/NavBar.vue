@@ -1,21 +1,23 @@
 <template>
-    <header :class="{ sticky: isSticky }">
-        <div class="nav-bar">
-            <router-link to="/" class="logo">Abenathi</router-link>
-            <div class="navigation" :class="{ active: isNavigationActive }">
-
-                <div class="nav-items">
-                    <i class="uil uil-times nav-close-btn" @click="closeNavigation"></i>
-                    <router-link to="/" class="links" :class="{ active: activeLink === 'home' }" @click="setActiveLink('home')">Home</router-link>
-                    <router-link to="/#about" class="links" :class="{ active: activeLink === 'about' }" @click="setActiveLink('about')">About</router-link>
-                    <router-link to="/#projects" class="links" :class="{ active: activeLink === 'projects' }" @click="setActiveLink('projects')">Projects</router-link>
-                    <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials')">Testimonials</router-link>
-                    <router-link to="/#contact" class="links" :class="{ active: activeLink === 'contact' }" @click="setActiveLink('contact')">Contact</router-link>
+    <div>
+        <header :class="{ sticky: isSticky }">
+            <div class="nav-bar">
+                <router-link to="/" class="logo">Abenathi</router-link>
+                <div class="navigation" :class="{ active: isNavigationActive }">
+    
+                    <div class="nav-items">
+                        <i class="uil uil-times nav-close-btn" @click="closeNavigation"></i>
+                        <router-link to="/" class="links" :class="{ active: activeLink === 'home' }" @click="setActiveLink('home'); closeNavigationAfterClick()">Home</router-link>
+                        <router-link to="/#about" class="links" :class="{ active: activeLink === 'about' }" @click="setActiveLink('about'); closeNavigationAfterClick()">About</router-link>
+                        <router-link to="/#projects" class="links" :class="{ active: activeLink === 'projects' }" @click="setActiveLink('projects'); closeNavigationAfterClick()">Projects</router-link>
+                        <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials'); closeNavigationAfterClick()">Testimonials</router-link>
+                        <router-link to="/#contact" class="links" :class="{ active: activeLink === 'contact' }" @click="setActiveLink('contact'); closeNavigationAfterClick()">Contact</router-link>
+                    </div>
                 </div>
+                <i class="uil uil-apps nav-menu-btn" @click="openNavigation"></i>
             </div>
-            <i class="uil uil-apps nav-menu-btn" @click="openNavigation"></i>
-        </div>
-    </header>
+        </header>
+    </div>
 </template>
 
 <script>
@@ -55,6 +57,10 @@ export default {
       },
 
       closeNavigation() {
+        this.isNavigationActive = false;
+      },
+
+      closeNavigationAfterClick() {
         this.isNavigationActive = false;
       },
 
@@ -156,7 +162,7 @@ header.sticky {
 
     .nav-close-btn{
         display: block;
-        color: var(--dark-color);
+        color: #FFFFFF;
         position: absolute;
         top: 0;
         right: 0;
@@ -191,12 +197,12 @@ header.sticky {
         position: relative;
         background: var(--white-color);
         width: 400px;
-        height: 500px;
+        /* height: 500px; */
         max-width: 400px;
         display: grid;
         place-content: center;
-        margin: auto;
-        padding: 40px;
+        /* margin: auto; */
+        /* padding: 40px; */
         border-radius: 20px;
         box-shadow: var(--box-shadow);
         transform: translateY(-80px);
@@ -208,7 +214,7 @@ header.sticky {
     }
 
     .navigation .nav-items a{
-        color: var(--dark-color);
+        color: #FFFFFF;
         font-size: 1em;
         margin: 40px;
         transition: 0.3s ease;

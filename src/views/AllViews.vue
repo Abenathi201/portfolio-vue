@@ -5,24 +5,28 @@
       <HomeComp/>
     </section>
     <!-- Landing Section -->
+    <hr>
   
     <!-- About Section -->
     <section id="about">
       <AboutComp/>
     </section>
     <!-- About Section -->
+    <hr>
 
     <!-- Projects Section -->
     <section id="projects">
       <ProjectComp/>
     </section>
     <!-- Projects Section -->
+    <hr>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
       <TestimonialsComp/>
     </section>
     <!-- Testimonials Section -->
+    <hr>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -54,4 +58,17 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
+/* hr{
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  hr{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+  }
+} */
 </style>

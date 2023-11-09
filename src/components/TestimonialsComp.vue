@@ -207,6 +207,10 @@ export default {
         margin-top: 100px;
     }
 
+    .line{
+        display: none;
+    }
+
     .frame{
         width: 100%;
     }
