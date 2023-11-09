@@ -18,10 +18,10 @@ export default {
 footer{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     height: 108px;
     padding: 10px;
     align-items: center;
-    /* margin-top: 20px; */
     box-shadow: 0px -8px 24px rgba(149, 157, 165, 0.2);
 }
 
@@ -42,7 +42,8 @@ a{
     footer{
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+        width: 100%;
+        background: #808080;
     }
 
     footer h1{

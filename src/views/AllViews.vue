@@ -58,17 +58,4 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
-/* hr{
-  display: none;
-}
-
-@media screen and (max-width: 1050px) {
-  hr{
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #000000;
-  }
-} */
 </style>

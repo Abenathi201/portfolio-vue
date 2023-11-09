@@ -144,7 +144,7 @@ header.sticky {
 }
 
 .active {
-    color: #777 !important;
+    color: #808080 !important;
 }
 
 @media screen and (max-width: 900px){
@@ -164,9 +164,9 @@ header.sticky {
         display: block;
         color: #FFFFFF;
         position: absolute;
-        top: 0;
+        top: -15px;
         right: 0;
-        font-size: 1.5em;
+        font-size: 2em;
         margin: 10px;
         cursor: pointer;
         transition: 0.3s ease;
@@ -195,15 +195,11 @@ header.sticky {
 
     .navigation .nav-items{
         position: relative;
-        background: var(--white-color);
-        width: 400px;
-        /* height: 500px; */
+        background: #000000;
+        width: 90%;
         max-width: 400px;
         display: grid;
         place-content: center;
-        /* margin: auto; */
-        /* padding: 40px; */
-        border-radius: 20px;
         box-shadow: var(--box-shadow);
         transform: translateY(-80px);
         transition: 0.3s ease;
@@ -217,11 +213,12 @@ header.sticky {
         color: #FFFFFF;
         font-size: 1em;
         margin: 40px;
+        margin-block: 25px;
         transition: 0.3s ease;
     }
 
     .navigation .nav-items a:hover{
-        color: var(--navigation-item-hover-color);
+        color: #808080;
     }
     
     .navigation .nav-items a i{

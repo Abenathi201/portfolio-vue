@@ -24,7 +24,10 @@
       </a>
     </div>
     <div class="scroll">
-      <h4>Scroll to view <i class="fa-sharp fa-solid fa-arrow-down"></i></h4>
+      <h4> Scroll to view </h4>
+      <router-link to="/#about">
+        <svg class="scroll-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 38.9"><path class="scroll-body" d="M12.8 38.4h-1.6C5.2 38.4.4 33.6.4 27.6V11.2C.4 5.2 5.2.4 11.2.4h1.6c6 0 10.8 4.8 10.8 10.8v16.5c0 5.9-4.8 10.7-10.8 10.7z"/><path class="scrl-wheel" d="M12 13.9a4.2 4.2 0 01-4.2-4.2V4.2C7.8 1.9 9.7 0 12 0c2.3 0 4.2 1.9 4.2 4.2v5.4a4.1 4.1 0 01-4.2 4.3z"/></svg>
+      </router-link>
     </div>
   </div>
 </template>
@@ -92,27 +95,59 @@ export default {
 }
 
 .scroll{
-  /* margin: auto; */
-  /* margin-bottom: 10px; */
   display: flex;
   justify-content: center;
+  gap: 7px;
   align-items: center;
 }
 
-.scroll i{
-  font-size: 20px;
-  animation: bounce 0.5s infinite;
+.scroll-icon{
+  display: block;
+  width: 20px;
+  height: auto;
+  overflow: visible;
+}
+.scroll-body{
+  fill: none;
+  stroke: #000000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 3.5;
+  animation: scroll-parallax 1.5s cubic-bezier(.41,.07,.83,.67) infinite running
+}
+@keyframes scroll-parallax {
+  25%{
+    transform: translateY(0)
+  }
+  75%{
+    transform: translateY(-20%)
+  }
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.scrl-wheel{
+  fill: #000000;
+  transform-origin: bottom;
+  animation: scroll-animation 1.5s linear infinite running;
+  will-change: transform;
 }
 
+@keyframes scroll-animation{
+0% {
+	transform: translateY(-90%) scale(0.7, 0.1)
+	}
+10% {
+  transform: translateY(-90%) scaleY(0.3)
+  }
+25% {
+  transform: translateY(-20%) scaleY(1)
+  }
+75% {
+	transform: translateY(40%) scaleY(1)
+	}
+100% {
+	transform: translateY(20%) scale(0.8, 0.1);
+	}
+}
 
 @media screen and (max-width: 800px){
   .container{
