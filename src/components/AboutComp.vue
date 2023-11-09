@@ -273,12 +273,15 @@ button {
     background calc(var(--dur) * 4) steps(4, jump-end);
 }
 
+.resume a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .btn:hover,
 .btn:focus {
   box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
   transform: translateY(-4px);
-  background: #FFFFFF;
-  color: #000000;
 }
 
 .contact .resume{
