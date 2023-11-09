@@ -343,6 +343,7 @@ form .form-row .textarea{
 
     .contact{
         width: 100%;
+        margin-bottom: 150px;
         display: flex;
         flex-direction: column;
     }
@@ -358,8 +359,12 @@ form .form-row .textarea{
 
     form{
         width: 100%;
-        height: 80%;
+        height: 445px;
         border: none;
+    }
+
+    .submit-btn input{
+        float: left;
     }
 
     .info h1{
@@ -438,5 +443,6 @@ form .form-row .textarea{
         margin-left: 20px;
         border: none;
     }
+
 }
 </style>
