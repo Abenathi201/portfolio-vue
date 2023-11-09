@@ -66,7 +66,7 @@
                 <div class="input-data textarea">
                     <textarea name="message" rows="8" cols="80" required></textarea>
                     <br/>
-                    <div class="underline-text"></div>
+                    <div class="underline"></div>
                     <label for="">Write your message</label>
                     <br/>
                     <div class="submit-btn">
@@ -115,8 +115,6 @@ export default {
     width: 1196px;
     height: 667px;
     margin: auto;
-    /* border: 2px solid #000000; */
-    padding: 10px;
     display: flex;
 }
 
@@ -149,7 +147,6 @@ export default {
 .details{
     width: 389px;
     height: 220px;
-    /* border: 1px solid #FFFFFF; */
     margin-left: 30px;
 }
 
@@ -163,7 +160,6 @@ export default {
 
 .socials{
     margin-left: 30px;
-    /* border: 2px solid #FFFFFF; */
     width: 389px;
     height: 100px;
     margin-top: 15px;
@@ -271,18 +267,11 @@ form .form-row .textarea{
     width: 100%;
 }
 
-.input-data .underline-text{
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-}
-
 .input-data .underline:before{
     position: absolute;
     content: "";
     height: 2px;
-    width: 81.5%;
+    width: 82.9%;
     margin-top: 4px;
     background: #000000;
     transform: scaleX(0);
@@ -290,29 +279,17 @@ form .form-row .textarea{
     transition: transform 0.3s ease;
 }
 
-.input-data .underline-text{
+.textarea .underline:before{
     position: absolute;
     content: "";
     height: 2px;
-    width: 81.5%;
-    margin-top: 4px;
+    width: 93.5%;
+    margin-top: 14.5px;
     background: #000000;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
 }
-
-/* .textarea .underline-text:before{
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 81.5%;
-    margin-top: 4px;
-    background: #000000;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-} */
 
 .input-data input:focus ~ .underline:before,
 .input-data input:valid ~ .underline:before,
@@ -355,9 +332,11 @@ form .form-row .textarea{
     }
 
     .container{
-        width: 100%;
+        width: 95%;
+        margin: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .contact{
@@ -379,6 +358,7 @@ form .form-row .textarea{
     form{
         width: 100%;
         height: 445px;
+        float: left;
         border: none;
     }
 
@@ -454,14 +434,53 @@ form .form-row .textarea{
         max-width: 650px;
         margin: 0 auto;
     }
-
+    
     form{
-        width: 100%;
+        width: 70%;
         height: 80%;
         margin: auto;
         margin-left: 20px;
         border: none;
     }
+    
+}
 
+@media screen and (min-width: 420px) and (max-width: 1124px) {
+    .contact{
+        margin-top: 350px;
+    }
+
+    .info{
+        width: 70%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    
+    form{
+        width: 70%;
+        height: 80%;
+        margin: auto;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1125px) {
+    .contact{
+        margin-top: 0px;
+    }
+
+    .info{
+        width: 50%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    
+    form{
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-right: 50px;
+        border: none;
+    }
 }
 </style>

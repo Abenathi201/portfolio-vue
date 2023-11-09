@@ -43,7 +43,6 @@ a{
         display: flex;
         flex-direction: column;
         width: 100%;
-        background: #808080;
     }
 
     footer h1{
