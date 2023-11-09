@@ -324,10 +324,11 @@ button {
 
   ul{
     padding-top: 15px;
+    margin-right: 50px;
   }
 
   ul li{
-    margin-inline: 10px;
+    margin: auto;
   }
 
   ul li img{
@@ -336,9 +337,15 @@ button {
     cursor: pointer;
     transition: 0.3s ease;
   }
+  
+  .horizontal{
+    width: 90%;
+    margin: auto;
+  }
 
   .contact{
-    width: 100%;
+    width: 80%;
+    margin-left: 19px;
     display: flex;
     flex-direction: column;
   }
