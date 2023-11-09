@@ -99,7 +99,9 @@
 
       <div class="right">
         <h6>abenathi.sindaphi201@gmail.com</h6>
-        <button class="resume btn">Resume</button>
+        <button class="resume btn">
+          <a href="https://drive.google.com/file/d/1dZlux_pIgbwWrD5Z_-p2dF_U5rBJu092/view?usp=sharing" target="_blank">Resume</a>
+        </button>
       </div>
     </div>
 
