@@ -15,8 +15,7 @@
                 <p> <i class="fa-solid fa-phone"></i> +27 65 838 0423</p>
                 <p> <i class="fa-solid fa-envelope"></i> abenathi.sindaphi201@gmail.com</p>
                 <p>
-                    <i class="fa-solid fa-location-dot"></i> 71 174 Nozinga Street, <br> 
-                    Zwelitsha, <br>
+                    <i class="fa-solid fa-location-dot"></i> Zwelitsha, <br>
                     Khayelitsha, <br>
                     7784
                 </p>
