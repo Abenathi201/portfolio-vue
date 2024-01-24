@@ -16,7 +16,7 @@
                         <p>{{ testimonials[currentTestimonial].testimony }}</p>
                     </div>
 
-                    <img src="https://i.postimg.cc/rs7DnrHC/ci-double-quotes-l.jpg" alt="" class="quotes">
+                    <img src="https://i.ibb.co/9y41wwD/ci-double-quotes-l.png" alt="" class="quotes">
 
                     <div class="header">
                         <h1>{{ testimonials[currentTestimonial].name }}</h1>
