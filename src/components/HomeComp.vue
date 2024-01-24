@@ -47,7 +47,6 @@ export default {
 }
 
 .title{
-  /* border: 2px solid black; */
   margin: 0;
   height: 300px;
 }

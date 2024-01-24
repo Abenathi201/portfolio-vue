@@ -125,6 +125,7 @@ export default {
 </script>
 
 <style scoped>
+/* Style */
 .about{
   width: 1120px;
   min-height: 1200px;

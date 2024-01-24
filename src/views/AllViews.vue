@@ -1,38 +1,38 @@
 <template>
   <div class="container">
-    <!-- Landing Section -->
+    <!-- Landing View -->
     <section id="home">
       <HomeComp/>
     </section>
-    <!-- Landing Section -->
+    <!-- Landing View -->
     <hr>
   
-    <!-- About Section -->
+    <!-- About View -->
     <section id="about">
       <AboutComp/>
     </section>
-    <!-- About Section -->
+    <!-- About View -->
     <hr>
 
-    <!-- Projects Section -->
+    <!-- Projects View -->
     <section id="projects">
       <ProjectComp/>
     </section>
-    <!-- Projects Section -->
+    <!-- Projects View -->
     <hr>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials View -->
     <section id="testimonials">
       <TestimonialsComp/>
     </section>
-    <!-- Testimonials Section -->
+    <!-- Testimonials View -->
     <hr>
 
-    <!-- Contact Section -->
+    <!-- Contact View -->
     <section id="contact">
       <ContactComp/>
     </section>
-    <!-- Contact Section -->
+    <!-- Contact View -->
   </div>
 </template>
 

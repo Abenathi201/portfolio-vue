@@ -25,6 +25,7 @@
                 </div>
                 </transition>
 
+                <!-- Right Button -->
                 <div class="right">
                     <transition name="fade" mode="out-in">
                     <img :src="testimonials[currentTestimonial].image" :alt="testimonials[currentTestimonial].name">
@@ -73,6 +74,7 @@ export default {
 </script>
 
 <style scoped>
+/* Style */
 .container{
     width: 1120px;
     min-height: 850px;
