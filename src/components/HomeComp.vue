@@ -43,7 +43,7 @@ export default {
   width: 850px;
   min-height: 750px;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 65px;
 }
 
 .title{
@@ -53,13 +53,13 @@ export default {
 }
 
 .title h1{
-  font-size: 65px;
+  font-size: 60px;
   font-weight: normal;
   color: #000000;
 }
 
 .title span{
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 600;
   margin-top: 25px;
   color: #808080;
@@ -69,7 +69,7 @@ export default {
   font-size: 50px;
   color: #000000;
   font-weight: normal;
-  margin-block: 0px;
+  margin-block: 15px;
 }
 
 .summary p{
