@@ -23,7 +23,7 @@
       </div>
 
       <div class="image">
-        <img src="https://i.postimg.cc/hjYzpV22/C12-C2-Abenathi-Sindapi-2.jpg" alt="Abenathi Sindapi">
+        <img src="https://i.ibb.co/D9QhFtp/C12-C2-Abenathi-Sindapi-3.jpg" alt="Abenathi Sindapi">
       </div>
     </div>
 
@@ -38,53 +38,53 @@
 
       <ul>
         <li>
-          <img src="https://i.postimg.cc/0QWr458Z/file-type-html-226x256.png" alt="HTML5">
+          <img src="https://i.ibb.co/j6b4zf8/file-type-html-902x1024.png" alt="HTML5">
           <h6>HTML</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/bNGSKnSn/file-type-css-226x256.png" alt="CSS">
+          <img src="https://i.ibb.co/gmhr5s7/css3-shiled-877x1024.png" alt="CSS">
           <h6>CSS</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/CKCqcVB6/bootstrap-plain-256x256.png" alt="Bootstrap">
+          <img src="https://i.ibb.co/QPHPVVf/bootstrap-plain-1024x1024.png" alt="Bootstrap">
           <h6>Bootstrap</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/dtTDWKgm/file-type-js-official-256x256.png" alt="JS">
+          <img src="https://i.ibb.co/PWH4cQ3/javascript-js-1024x1024.png" alt="JS">
           <h6>JavaScript</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/9fxq6YbG/vue-vuejs-javascript-js-framework-256x223.png" alt="Vue">
+          <img src="https://i.ibb.co/8zmNskp/vue-vuejs-javascript-js-framework-1024x891.png" alt="Vue">
           <h6>VUE.JS</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/3rkgHVPW/mysqlworkbench-512x506.png" alt="mysql">
+          <img src="https://i.ibb.co/R9jJqzL/database-mysql-980x1024.png" alt="mysql">
           <h6>MySQL</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/mZK7ZVsj/node-js-227x256.png" alt="node">
+          <img src="https://i.ibb.co/F6gn8WG/nodejs-original-907x1024.png" alt="node">
           <h6>NODE.JS</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/7LP2tW3H/npm-512x200.png" alt="npm">
-          <h6>NPM</h6>
+          <img src="https://i.ibb.co/mRBZz7H/react-javascript-js-framework-facebook-1024x911.png" alt="react">
+          <h6>REACT.JS</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/zfpfLDR5/github-256x250.png" alt="github">
-          <h6>GitHub</h6>
+          <img src="https://i.ibb.co/B634vnn/nextjs-1024x1024.png" alt="next.js">
+          <h6>NEXT.JS</h6>
         </li>
 
         <li>
-          <img src="https://i.postimg.cc/cLwgJNm4/file-type-firebase-187x256.png" alt="firebase">
-          <h6>Firebase</h6>
+          <img src="https://i.ibb.co/h7Kcx1x/figma-684x1024.png" alt="figma">
+          <h6>Figma</h6>
         </li>
       </ul>
     </div>
