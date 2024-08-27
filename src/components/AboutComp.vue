@@ -29,6 +29,7 @@
 
     <div class="skills">
       <h3>Skills</h3>
+<<<<<<< HEAD
 
       <!-- <div class="nav">
         <button>All</button>
@@ -36,6 +37,8 @@
         <button>Soft</button>
       </div> -->
 
+=======
+>>>>>>> 3a11e46 (Updated CV)
       <ul>
         <li>
           <img src="https://i.ibb.co/j6b4zf8/file-type-html-902x1024.png" alt="HTML5">
@@ -100,7 +103,11 @@
       <div class="right">
         <h6>abenathi.sindaphi201@gmail.com</h6>
         <button class="resume btn">
+<<<<<<< HEAD
           <a href="https://drive.google.com/file/d/1dZlux_pIgbwWrD5Z_-p2dF_U5rBJu092/view?usp=sharing" target="_blank">Resume</a>
+=======
+          <a href="https://drive.google.com/file/d/1VIK1-fcQTo8UvqNDcjxoc-g9PP7CuUnh/view" target="_blank">Resume</a>
+>>>>>>> 3a11e46 (Updated CV)
         </button>
       </div>
     </div>
