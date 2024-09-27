@@ -10,7 +10,7 @@
 
     <div class="summary">
       <p>
-        Web Developer from Khayelitsha Breaking Barriers with Technology 🚀 | AWS Enthusiast 🌐 | Empowered Through Code 💡
+        Dedicated to Creating Meaningful Web Solutions 🌟 | Eager to Learn and Grow 🪴 | Actively Seeking Entry-Level Positions and Internships 🔍
       </p>
     </div>
 
