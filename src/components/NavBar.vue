@@ -10,7 +10,7 @@
                         <router-link to="/" class="links" :class="{ active: activeLink === 'home' }" @click="setActiveLink('home'); closeNavigationAfterClick()">Home</router-link>
                         <router-link to="/#about" class="links" :class="{ active: activeLink === 'about' }" @click="setActiveLink('about'); closeNavigationAfterClick()">About</router-link>
                         <router-link to="/#projects" class="links" :class="{ active: activeLink === 'projects' }" @click="setActiveLink('projects'); closeNavigationAfterClick()">Projects</router-link>
-                        <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials'); closeNavigationAfterClick()">Testimonials</router-link>
+                        <router-link to="/#testimonials" class="links" :class="{ active: activeLink === 'testimonials' }" @click="setActiveLink('testimonials'); closeNavigationAfterClick()">Peer-Reviews</router-link>
                         <router-link to="/#contact" class="links" :class="{ active: activeLink === 'contact' }" @click="setActiveLink('contact'); closeNavigationAfterClick()">Contact</router-link>
                     </div>
                 </div>

@@ -106,8 +106,7 @@ export default {
 
 .frame{
     width: 1080px;
-    height: 1000px;
-    /* background: #808080; */
+    height: 800px;
 }
 
 .inner{
