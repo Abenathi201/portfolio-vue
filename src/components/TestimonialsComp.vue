@@ -2,14 +2,12 @@
     <div class="container">
         <div class="title">
             <div class="line"></div>
-            <h1>Testimonials</h1>
+            <h1>Peer Reviews</h1>
             <div class="line"></div>
         </div>
 
         <div class="frame"  v-if="testimonials">
-
             <div class="inner" v-if="currentTestimonial !== null">
-
                 <transition name="fade" mode="out-in">
                 <div class="left">
                     <div class="text">
@@ -25,7 +23,6 @@
                 </div>
                 </transition>
 
-                <!-- Right Button -->
                 <div class="right">
                     <transition name="fade" mode="out-in">
                     <img :src="testimonials[currentTestimonial].image" :alt="testimonials[currentTestimonial].name">
@@ -59,11 +56,17 @@ export default {
     },
 
     methods: {
-      nextTestimonial() {
-        if (this.currentTestimonial < this.testimonials.length - 1) {
-          this.currentTestimonial++;
-        }
-      },
+        nextTestimonial() {
+    if (this.currentTestimonial < this.testimonials.length - 1) {
+      this.currentTestimonial++;
+      // Preload the next image
+      const nextIndex = this.currentTestimonial + 1;
+      if (nextIndex < this.testimonials.length) {
+        const img = new Image();
+        img.src = this.testimonials[nextIndex].image;
+      }
+    }
+  },
       prevTestimonial() {
         if (this.currentTestimonial > 0) {
           this.currentTestimonial--;
@@ -104,11 +107,12 @@ export default {
 .frame{
     width: 1080px;
     height: 1000px;
+    /* background: #808080; */
 }
 
 .inner{
     width: 957px;
-    height: 598px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -124,7 +128,6 @@ export default {
 .text{
     width: 360px;
     height: 216px;
-    /* border: 2px solid #000000; */
 }
 
 .text p{
@@ -156,8 +159,8 @@ export default {
 }
 
 .right img{
-    width: 442px;
-    height: 670px;
+    width: 400px;
+    height: 550px;
     object-fit: fill;
 }
 

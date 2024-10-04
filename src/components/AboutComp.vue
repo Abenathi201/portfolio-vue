@@ -12,13 +12,19 @@
         <h1>Abenathi Sindapi, an Aspiring Full-Stack Developer</h1>
 
         <p>
-          Abenathi Sindapi, based in Khayelitsha, is an aspiring <br> <span>Full-Stack Developer</span> with a strong drive to use technology for positive change. With foundation in <span>HTML, CSS, Bootstrap, JavaScript, Vue.js, MySQL and Node.js</span>. Abenathi is continually working to upskill himself to get better opportunities and continuously grow as human.
+          I’m an aspiring <span>Full-Stack Developer</span>. I have experience with <span>HTML, CSS, Bootstrap, JavaScript, Vue.js, MySQL, Node.js, and React</span>. I’m constantly working to improve my skills, seeking better opportunities for personal and professional growth.
+          <!-- <br> -->
+          <!-- <br> -->
+          <!-- I’ve learned the value of hard work and determination throughout my journey. I believe in using technology to solve real-world problems and make everyday tasks easier. I’m passionate about creating web solutions that are both practical and impactful. -->
           <br>
           <br>
-          Abenathi's journey reflects the power of grit, determination and learning. The belief is that technology is a tool for empowerment and there is a commitment to creating opportunities and bridging gaps. Abenathi is open to connecting and collaborating on projects that bring positive impact, believing that together, a brighter future can be shaped through code.
+          I attended at <span>Life Choices Academy</span>, where I gained hands-on experience in web development, from <span>Front-End Design</span> to <span>Back-End Functionality</span>. The academy taught me how to turn ideas into fully functional web applications and sharpened my problem-solving skills.
           <br>
           <br>
-          Now he is preparing for the AWS exam to improve proficiency in cloud computing and also seeking internship opportunities.
+          I also completed a program at <span>On The Ball College</span>, where I focused on Java and learned the fundamentals of programming. There, I gained knowledge in software development principles and improved my technical skills, which helped me understand how to build solid applications.
+          <br>
+          <br>
+          I’m actively looking for <span>ENTRY-LEVEL Positions</span> and <span>INTERNSHIPS</span> where I can keep learning, improve my skills, and collaborate with others to work on projects that make a real impact. I’m excited about the future and eager to contribute through code.
         </p>
       </div>
 
@@ -68,11 +74,6 @@
         <li>
           <img src="https://i.ibb.co/mRBZz7H/react-javascript-js-framework-facebook-1024x911.png" alt="react">
           <h6>REACT.JS</h6>
-        </li>
-
-        <li>
-          <img src="https://i.ibb.co/B634vnn/nextjs-1024x1024.png" alt="next.js">
-          <h6>NEXT.JS</h6>
         </li>
 
         <li>
@@ -172,8 +173,8 @@ export default {
 }
 
 .bio span{
-  color: #808080;
-  font-weight: 500;
+  color: #000000;
+  font-weight: 600;
 }
 
 .image{
