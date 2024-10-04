@@ -106,7 +106,8 @@ export default {
 
 .frame{
     width: 1080px;
-    height: 800px;
+    height: 1000px;
+    /* background: #808080; */
 }
 
 .inner{
@@ -232,9 +233,8 @@ export default {
 
     .left{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
-        gap: 90px;
         margin: auto;
     }
 
@@ -243,7 +243,7 @@ export default {
     }
 
     .text{
-        width: 100%;
+        width: 90%;
     }
 
     .text p{
@@ -257,6 +257,7 @@ export default {
     .right img{
         width: 85%;
         height: 96%;
+        margin-top: 80px;
     }
 }
 </style>
