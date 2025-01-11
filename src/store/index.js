@@ -23,28 +23,6 @@ export default createStore({
   },
 
   actions: {
-    // async getTestimonials(context) {
-    //   try {
-    //     const res = await fetch(database)
-    //     const  {testimonials}  = await res.json();
-    //     context.commit("setTestimonials", testimonials);
-    //     console.log(testimonials)
-    //   } catch (error) {
-    //     context.commit("Testimonials Error", error.message);
-    //   }
-    // },
-
-    // async getProjects(context) {
-    //   try{
-    //     const res = await fetch(database)
-    //     const {projects} = await res.json();
-    //     context.commit("setProjects", projects);
-    //     console.log(projects);
-    //   } catch (error) {
-    //     context.commit("Projects Error", error.message)
-    //   }
-    // },
-
     async getProjects(context) {
       try {
         const response = await fetch(database);
